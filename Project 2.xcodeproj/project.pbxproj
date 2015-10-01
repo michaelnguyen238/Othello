@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4C379DB91AE0B6E4006977D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C379DB81AE0B6E4006977D5 /* main.cpp */; };
+		4C82D1FE1AE19C0600F65C04 /* OthelloMove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C82D1FD1AE19C0600F65C04 /* OthelloMove.cpp */; };
+		4C82D2021AE1C9EE00F65C04 /* OthelloView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C82D2011AE1C9EE00F65C04 /* OthelloView.cpp */; };
+		4C90EAC91AE97A1500CAC325 /* OthelloBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C90EAC81AE97A1500CAC325 /* OthelloBoard.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		4C379DB51AE0B6E4006977D5 /* Project 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C379DB81AE0B6E4006977D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4C379DBF1AE0B783006977D5 /* OthelloBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthelloBoard.h; sourceTree = "<group>"; };
+		4C379DC01AE0B783006977D5 /* OthelloExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthelloExceptions.h; sourceTree = "<group>"; };
+		4C379DC11AE0B783006977D5 /* OthelloMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthelloMove.h; sourceTree = "<group>"; };
+		4C379DC21AE0B783006977D5 /* OthelloView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthelloView.h; sourceTree = "<group>"; };
+		4C82D1FD1AE19C0600F65C04 /* OthelloMove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OthelloMove.cpp; sourceTree = "<group>"; };
+		4C82D2011AE1C9EE00F65C04 /* OthelloView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OthelloView.cpp; sourceTree = "<group>"; };
+		4C90EAC81AE97A1500CAC325 /* OthelloBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OthelloBoard.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				4C379DB81AE0B6E4006977D5 /* main.cpp */,
+				4C379DBF1AE0B783006977D5 /* OthelloBoard.h */,
+				4C90EAC81AE97A1500CAC325 /* OthelloBoard.cpp */,
+				4C379DC01AE0B783006977D5 /* OthelloExceptions.h */,
+				4C379DC11AE0B783006977D5 /* OthelloMove.h */,
+				4C82D1FD1AE19C0600F65C04 /* OthelloMove.cpp */,
+				4C379DC21AE0B783006977D5 /* OthelloView.h */,
+				4C82D2011AE1C9EE00F65C04 /* OthelloView.cpp */,
 			);
 			path = "Project 2";
 			sourceTree = "<group>";
@@ -88,7 +105,7 @@
 		4C379DAD1AE0B6E4006977D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Michael Nguyen";
 				TargetAttributes = {
 					4C379DB41AE0B6E4006977D5 = {
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C90EAC91AE97A1500CAC325 /* OthelloBoard.cpp in Sources */,
+				4C82D1FE1AE19C0600F65C04 /* OthelloMove.cpp in Sources */,
 				4C379DB91AE0B6E4006977D5 /* main.cpp in Sources */,
+				4C82D2021AE1C9EE00F65C04 /* OthelloView.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +165,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -235,6 +256,7 @@
 				4C379DBE1AE0B6E4006977D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
